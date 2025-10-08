@@ -8,13 +8,13 @@ const initialTasks = [
     { text: "Grocery Shopping (Milk, Eggs, Bread)", datetime: "2025-09-30T10:00" },
     { text: "Finish JavaScript To-Do App 💻", datetime: "2025-09-25T14:30" },
     { text: "Call the Dentist for Appointment", datetime: "2025-10-01T09:00" },
-    { text: "Go for a 30-minute walk 🚶‍♀️", datetime: "" } // Optional: allow empty date/time
+    { text: "Go for a 30-minute walk 🚶‍♀️", datetime: "2025-10-02T09:00" } // add task as object gor list
 ];
 
-// Function to format the date/time string for display
+// Date and time
 function formatDateTime(dateTimeString) {
     if (!dateTimeString) {
-        return ""; // Return empty string if no date/time is set
+        return ""; 
     }
     const options = { 
         weekday: 'short', 
